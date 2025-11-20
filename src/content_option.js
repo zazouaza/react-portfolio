@@ -76,90 +76,129 @@ const services = [{
     },
 ];
 
-const dataportfolio = [{
-        img: "https://picsum.photos/400/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
+// Portfolio sections with projects
+const portfolioSections = [
+    {
+        title: "Featured Projects",
+        projects: [
+            {
+                id: "final-year-project",
+                title: "Final Year Project",
+                shortDescription: "A comprehensive full-stack application developed as my final year project.",
+                description: "This is my final year project - a comprehensive full-stack application. The project is not currently hosted as there are no real users, but this demo video will help you understand what the project is about and its capabilities.",
+                img: "/assets/final-year-project.jpg",
+                images: [
+                    "/assets/final-year-project-1.jpg",
+                    "/assets/final-year-project-2.jpg",
+                    "/assets/final-year-project-3.jpg"
+                ],
+                demoLink: "https://www.youtube.com/watch?v=M04GrT4P43E&t=23s",
+                category: "Full Stack",
+                technologies: ["React", "php laravel", "xampp server ","mysql database",],
+                hosted: false
+            },
+            {
+                id: "residence-management",
+                title: "Residence Management System",
+                shortDescription: "A private residence app for tracking bills, subscriptions, fees, analytics, and proposals.",
+                description: "A comprehensive residence management application built for a private residence. This app allows residents to track their bills, view monthly subscriptions and fees, access analytics, and manage proposals. The application provides a complete solution for managing all aspects of residence-related finances and documentation, and so much more if youre interested i can show u all the app on a video demo",
+                img: "/assets/residence-management.jpg",
+                images: [
+                    "/assets/residence-management-1.jpg",
+                    "/assets/residence-management-2.jpg",
+                    "/assets/residence-management-3.jpg",
+                    "/assets/residence-management-4.jpg"
+                ],
+                demoLink: "https://resident-funds.vercel.app/",
+                category: "Full Stack",
+                technologies: ["typescript", "Node.js", "supabase"],
+                hosted: true
+            },
+            {
+                id: "booking-app",
+                title: "Booking & Consultation App",
+                shortDescription: "A freelancing booking platform for clients to book consultations and services.",
+                description: "A modern booking and consultation application designed for freelancing. This platform allows clients to book my services and consultations directly. I use this app on my social media to streamline the booking process for potential clients. It features an intuitive interface for scheduling, managing appointments, and handling client communications.",
+                img: "/assets/booking-app.jpg",
+                images: [
+                    "/assets/booking-app-1.jpg",
+                    "/assets/booking-app-2.jpg"
+                ],
+                demoLink: "https://zazou-booking.vercel.app/",
+                category: "Full Stack",
+                technologies: ["React", "Next.js", "TypeScript"],
+                hosted: true
+            }
+        ]
     },
     {
-        img: "https://picsum.photos/400/800/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/600/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/300/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/700/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-
-    {
-        img: "https://picsum.photos/400/600/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/300/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/550/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/700/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
+        title: "Learning Projects",
+        projects: [
+            {
+                id: "xo-game",
+                title: "XO Game (Tic-Tac-Toe)",
+                shortDescription: "A classic tic-tac-toe game built with vanilla JavaScript.",
+                description: "A simple and fun tic-tac-toe game built with vanilla JavaScript while learning web development. This project demonstrates fundamental JavaScript concepts including DOM manipulation, event handling, and game logic implementation.",
+                img: "/assets/xo-game.jpg",
+                images: [
+                    "/assets/xo-game-1.jpg"
+                ],
+                demoLink: "https://zazouaza.github.io/xo-game/",
+                category: "Frontend",
+                technologies: ["JavaScript", "HTML", "CSS"],
+                hosted: true
+            },
+            {
+                id: "qr-generator",
+                title: "QR Code Generator",
+                shortDescription: "Generate QR codes for any text or URL with customizable sizes.",
+                description: "A QR code generator application that allows users to create QR codes for any text or URL. The app features customizable sizes and the ability to download or share the generated QR codes. Built with vanilla JavaScript to practice API integration and user interface design.",
+                img: "/assets/qr-generator.jpg",
+                images: [
+                    "/assets/qr-generator-1.jpg"
+                ],
+                demoLink: "https://zazouaza.github.io/qr-code-generator/",
+                category: "Frontend",
+                technologies: ["JavaScript", "HTML", "CSS"],
+                hosted: true
+            },
+            {
+                id: "text-editor",
+                title: "Text Editor",
+                shortDescription: "A rich text editor with formatting options built with JavaScript.",
+                description: "A text editor application with rich formatting capabilities. Users can format text with different heading styles, font colors, and highlight colors. This project was created to practice JavaScript DOM manipulation and implement a WYSIWYG editor interface.",
+                img: "/assets/text-editor.jpg",
+                images: [
+                    "/assets/text-editor-1.jpg"
+                ],
+                demoLink: "https://zazouaza.github.io/text-editor/",
+                category: "Frontend",
+                technologies: ["JavaScript", "HTML", "CSS"],
+                hosted: true
+            }
+        ]
+    }
 ];
+
+// Legacy format for backward compatibility (can be removed later)
+const dataportfolio = [];
 
 const contactConfig = {
     YOUR_EMAIL: "zazourighi@gmail.com",
     YOUR_FONE: "+213 672399411",
     description: "i'm availlable on whats app and i try to respond as quick as possible to the emails  ",
-    // creat an emailjs.com account 
-    // check out this tutorial https://www.emailjs.com/docs/examples/reactjs/
-    YOUR_SERVICE_ID: "service_id",
-    YOUR_TEMPLATE_ID: "template_id",
-    YOUR_USER_ID: "user_id",
 };
 
 const socialprofils = {
     github: "https://github.com/zazouaza",
-    facebook: "https://facebook.com",
     linkedin: "https://www.linkedin.com/in/righi-dhiaeddine-383b46317/",
-    twitter: "https://x.com/zazouchilling00",
+    tiktok: "https://www.tiktok.com/@zazou_coding",
 };
 export {
     meta,
     dataabout,
     dataportfolio,
+    portfolioSections,
     worktimeline,
     skills,
     services,
