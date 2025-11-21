@@ -8,7 +8,7 @@ const introdata = {
     title: "I’m Righi Dhiaeddine",
     animated: {
         first: "coding entuhsiast ",
-        second: "also an Ai ENTHUSIAST aka 'vibe coder'",
+        second: "also an Ai ENTHUSIAST ,proficient with ai tools",
         third: "i do both frontend and backend",
     },
     description: "I'm a full stack developer creating user-friendly and efficient web applications. I'm also an AI enthusiast . I'm currently in Algeria building webapps trying to fill up my resume .",
@@ -17,7 +17,7 @@ const introdata = {
 
 const dataabout = {
     title: "a bit about my self",
-    aboutme: " I'm a fresh Masters graduate trying to  learn  and challenge my self more and get into the tech field ",
+    aboutme: " I'm a Masters graduate in Computer Science trying to  learn  and challenge my self more and get into the tech field ",
 };
 const worktimeline = [{
         jobtitle: "an web app for renting cars",
@@ -31,9 +31,8 @@ const worktimeline = [{
     },
     
 ];
-
 const skills = [{
-        name: "React",
+        name: "typescript,react,next.js",
         value: 90,
     },
     {
@@ -103,13 +102,9 @@ const portfolioSections = [
                 shortDescription: "A private residence app for tracking bills, subscriptions, fees, analytics, and proposals.",
                 description: "A comprehensive residence management application built for a private residence. This app allows residents to track their bills, view monthly subscriptions and fees, access analytics, and manage proposals. The application provides a complete solution for managing all aspects of residence-related finances and documentation, and so much more if youre interested i can show u all the app on a video demo",
                 img: "/assets/residence-management.jpg",
-                images: [
-                    "/assets/residence-management-1.jpg",
-                    "/assets/residence-management-2.jpg",
-                    "/assets/residence-management-3.jpg",
-                    "/assets/residence-management-4.jpg"
-                ],
+                
                 demoLink: "https://resident-funds.vercel.app/",
+                videoLink: "https://www.youtube.com/watch?v=Vu3eCtL499E",
                 category: "Full Stack",
                 technologies: ["typescript", "Node.js", "supabase"],
                 hosted: true

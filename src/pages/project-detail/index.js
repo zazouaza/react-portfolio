@@ -56,14 +56,14 @@ export const ProjectDetail = () => {
 
         <Row>
           <Col lg="8" className="mb-4">
-            {/* Show YouTube video embed for final year project, images for others */}
-            {project.id === "final-year-project" && project.demoLink ? (
+            {/* Show YouTube video embed for final year project, and use videoLink for residence management */}
+            {(project.id === "final-year-project" && project.demoLink) || (project.id === "residence-management" && project.videoLink) ? (
               <div className="project-video-container">
                 <div className="video-wrapper">
                   <iframe
                     width="100%"
                     height="500"
-                    src={project.demoLink.replace('watch?v=', 'embed/').split('&')[0]}
+                    src={(project.id === 'residence-management' ? project.videoLink : project.demoLink).replace('watch?v=', 'embed/').split('&')[0]}
                     title={project.title}
                     frameBorder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -71,7 +71,7 @@ export const ProjectDetail = () => {
                   ></iframe>
                 </div>
                 <p className="video-note mt-3">
-                  <a href={project.demoLink} target="_blank" rel="noopener noreferrer" className="text-decoration-none">
+                  <a href={project.id === 'residence-management' ? project.videoLink : project.demoLink} target="_blank" rel="noopener noreferrer" className="text-decoration-none">
                     Watch on YouTube ↗
                   </a>
                 </p>
