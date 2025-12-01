@@ -7,7 +7,7 @@ const meta = {
 const introdata = {
     title: "I’m Righi Dhiaeddine",
     animated: {
-        first: "coding entuhsiast ",
+        first: "coding enthusiast ",
         second: "also an Ai ENTHUSIAST ,proficient with ai tools",
         third: "i do both frontend and backend",
     },
@@ -20,59 +20,61 @@ const dataabout = {
     aboutme: " I'm a Masters graduate in Computer Science trying to  learn  and challenge my self more and get into the tech field ",
 };
 const worktimeline = [{
-        jobtitle: "an web app for renting cars",
-        where: "akri l'auto bl5ef",
-        date: "2024",
-    },
-    {
-        jobtitle: "secure web application for a medical clinic ",
-        where: "benchrif clinique",
-        date: "2025",
-    },
-    
+    jobtitle: "Free lancing",
+    where: "social media platforms, reach out to people who need webapps",
+    date: "2025 - present",
+},
+
+
 ];
 const skills = [{
-        name: "typescript,react,next.js",
-        value: 90,
-    },
-    {
-        name: "php/laravel",
-        value: 85,
-    },
-    {
-        name: "Javascript",
-        value: 80,
-    },
-    {
-        name: "MYSQL",
-        value: 60,
-    },
-    {
-        name: "Node.js",
-        value: 85,
-    },
+    name: "typescript,react,next.js",
+    value: 90,
+},
+{
+    name: "php/laravel",
+    value: 75,
+},
+{
+    name: "Node.js",
+    value: 80,
+},
+
+{
+    name: "MYSQL,Postgresql,mongodb",
+    value: 90,
+},
+
+{
+    name: "docker/kubernetes",
+    value: 60,
+},
+{
+    name: "nginx/varnish",
+    value: 60,
+},
 ];
 
 const services = [{
-        title: "UI & UX Design",
-        description: "I can design modern UIs depending on your taste and needs.",
-    },
-    {
-        title: "Backend",
-        description: "I can set up your whole database starting from the schema.",
-    },
-    {
-        title: "Landing pages ",
-        description: "I can create a modern landing page for your business",
-    },
-    {
-        title: "ecommerce webapps ",
-        description: "I can create an ecommerce website integrate payment and also a modern admin dashboared that will make your business flow much easier",
-    },
-    {
-        title: "Full stack webapps",
-        description: "I can do all the work on a full stack web app both the frontend and backend ",
-    },
+    title: "UI & UX Design",
+    description: "I can design modern UIs depending on your taste and needs.",
+},
+{
+    title: "Backend",
+    description: "I can set up your whole database starting from the schema.",
+},
+{
+    title: "Landing pages ",
+    description: "I can create a modern landing page for your business",
+},
+{
+    title: "ecommerce webapps ",
+    description: "I can create an ecommerce website integrate payment and also a modern admin dashboared that will make your business flow much easier",
+},
+{
+    title: "Full stack webapps",
+    description: "I can do all the work on a full stack web app both the frontend and backend ",
+},
 ];
 
 // Portfolio sections with projects
@@ -80,6 +82,17 @@ const portfolioSections = [
     {
         title: "Featured Projects",
         projects: [
+            {
+                id: "microservices-app",
+                title: "Microservices Architecture App",
+                shortDescription: "A scalable full-stack app with Docker, Kubernetes, and Microservices.",
+                description: "An application built with Node.js backend and PostgreSQL hosted on Supabase, with TypeScript for the frontend. Containerized using Docker and clustered with Minikube (2 pods for backend, 2 for frontend). Uses Nginx as a load balancer and Varnish for caching.",
+                img: "/assets/microservices-project.png",
+                demoLink: "https://www.youtube.com/watch?v=f-L2GvH7XFE",
+                category: "Full Stack",
+                technologies: ["Node.js", "PostgreSQL", "Supabase", "TypeScript", "Docker", "Kubernetes", "Nginx", "Varnish"],
+                hosted: false
+            },
             {
                 id: "final-year-project",
                 title: "Final Year Project",
@@ -93,7 +106,7 @@ const portfolioSections = [
                 ],
                 demoLink: "https://www.youtube.com/watch?v=M04GrT4P43E&t=23s",
                 category: "Full Stack",
-                technologies: ["React", "php laravel", "xampp server ","mysql database",],
+                technologies: ["React", "php laravel", "xampp server ", "mysql database",],
                 hosted: false
             },
             {
@@ -102,8 +115,8 @@ const portfolioSections = [
                 shortDescription: "A private residence app for tracking bills, subscriptions, fees, analytics, and proposals.",
                 description: "A comprehensive residence management application built for a private residence. This app allows residents to track their bills, view monthly subscriptions and fees, access analytics, and manage proposals. The application provides a complete solution for managing all aspects of residence-related finances and documentation, and so much more if youre interested i can show u all the app on a video demo",
                 img: "/assets/residence-management.jpg",
-                
-                demoLink: "https://resident-funds.vercel.app/",
+
+                demoLink: "https://resident-funds-hub.vercel.app/",
                 videoLink: "https://www.youtube.com/watch?v=Vu3eCtL499E",
                 category: "Full Stack",
                 technologies: ["typescript", "Node.js", "supabase"],

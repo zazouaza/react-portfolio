@@ -43,7 +43,7 @@ export const ProjectDetail = () => {
           <title>{project.title} | {meta.title}</title>
           <meta name="description" content={project.shortDescription} />
         </Helmet>
-        
+
         <Row className="mb-5 mt-3 pt-md-3">
           <Col lg="12">
             <Link to="/portfolio" className="back-link">
@@ -56,8 +56,8 @@ export const ProjectDetail = () => {
 
         <Row>
           <Col lg="8" className="mb-4">
-            {/* Show YouTube video embed for final year project, and use videoLink for residence management */}
-            {(project.id === "final-year-project" && project.demoLink) || (project.id === "residence-management" && project.videoLink) ? (
+            {/* Show YouTube video embed for final year project, microservices app, and use videoLink for residence management */}
+            {((project.id === "final-year-project" || project.id === "microservices-app") && project.demoLink) || (project.id === "residence-management" && project.videoLink) ? (
               <div className="project-video-container">
                 <div className="video-wrapper">
                   <iframe
@@ -79,7 +79,7 @@ export const ProjectDetail = () => {
             ) : (
               <>
                 <div className="project-main-image">
-                  <img 
+                  <img
                     src={`${process.env.PUBLIC_URL || ''}${project.images && project.images.length > 0 ? project.images[selectedImage] : project.img}`}
                     alt={project.title}
                     onError={(e) => {
@@ -93,7 +93,7 @@ export const ProjectDetail = () => {
                     }}
                   />
                 </div>
-                
+
                 {project.images && project.images.length > 1 && (
                   <div className="project-image-gallery">
                     {project.images.map((image, index) => (
@@ -102,7 +102,7 @@ export const ProjectDetail = () => {
                         className={`gallery-thumb ${selectedImage === index ? 'active' : ''}`}
                         onClick={() => setSelectedImage(index)}
                       >
-                        <img 
+                        <img
                           src={`${process.env.PUBLIC_URL || ''}${image}`}
                           alt={`${project.title} - Image ${index + 1}`}
                           onError={(e) => {
@@ -145,9 +145,9 @@ export const ProjectDetail = () => {
 
               <div className="project-actions">
                 {project.demoLink && (
-                  <a 
-                    href={project.demoLink} 
-                    target="_blank" 
+                  <a
+                    href={project.demoLink}
+                    target="_blank"
                     rel="noopener noreferrer"
                     className="demo-btn"
                   >
